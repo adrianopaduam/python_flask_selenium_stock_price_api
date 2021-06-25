@@ -1,0 +1,25 @@
+Você é responsável para desenvolver uma API REST (em Flask) para acionar a captação de um crawler (com simulação de navegador - selenium).
+A API deve receber uma requisição GET no endpoint /stocks e disparar o crawler para pegar todas os nomes (name), símbolos (symbol) e preços (price (intraday)) do site https://finance.yahoo.com/screener/new.
+Nessa requisição deve ser passado o parâmetro "region". Deve ser criado um cache com o resultado que dura 3 minutos e 13 segundos.
+O retorno deve ser um json na seguinte estrutura:
+{
+    "simbolo": {
+        "symbol": "simbolo",
+        "name": "nome",
+        "price": "100.00"
+    },
+}
+
+Exemplo buscando por Argentina:
+{
+    "AMX.BA": {
+        "symbol": "AMX.BA",
+        "name": "América Móvil, S.A.B. de C.V.",
+        "price": "2089.00"
+    },
+    "NOKA.BA": {
+        "symbol": "NOKA.BA",
+        "name": "Nokia Corporation",
+        "price": "557.50"
+    }
+}
