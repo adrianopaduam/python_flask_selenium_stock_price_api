@@ -28,7 +28,7 @@ A flask-driven restful API for stock market information scrapping
         ```
 
 * #### Environment Variables
-    Create a .env file and add the same information appointed on .env-example file (Yoy can twak it as much as you like)
+    Create a .env file on the root folder and add the same information appointed on .env-example file (You can twak it as much as you like)
 
 * #### Install your requirements
     ```
@@ -48,6 +48,9 @@ A flask-driven restful API for stock market information scrapping
 
 ## Docker Installation / Usage
 Another option is to install docker using these instructions [here](https://www.docker.com/products/docker-desktop) and build the API as a container.
+
+* #### Environment Variables
+    Create a .env file on the root folder and add the same information appointed on .env-example file (You can twak it as much as you like)
 
 * #### Building Docker Container
     On your terminal, generate the container using the command:
